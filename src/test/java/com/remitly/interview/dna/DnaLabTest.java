@@ -18,8 +18,9 @@ public class DnaLabTest {
     @Test
     void canBeComplimentary() {
         Assert.assertTrue(dnaLab.canBeComplimentary(
-            new NucleobaseSequence(ADENINE),
-            new NucleobaseSequence(GUANINE, THYMINE, CYTOSINE),
-            new NucleobaseSequence(THYMINE, ADENINE)        ));
+            new NucleobaseSequence(CYTOSINE),
+            new NucleobaseSequence(THYMINE, ADENINE),
+            new NucleobaseSequence(ADENINE, GUANINE, THYMINE)
+        ));
     }
 }
